@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start:tw": "postcss ./src/tailwind.src.css -o ./src/tailwind.css -w",
+    "start": "yarn start:tw & react-scripts start",
+    "build:tw": "postcss ./src/tailwind.src.css -o ./src/tailwind.css",
+    "build": "yarn build:tw & react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "postcss-cli": "^6.0.0",
+    "tailwindcss": "^0.6.5"
+  }
+}
